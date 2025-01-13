@@ -88,6 +88,7 @@ cellMaxMag
 ///////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////
+
 residuals
 {
   functionObjectLibs ("libutilityFunctionObjects.so");
@@ -101,6 +102,37 @@ residuals
 
   fields (p U);
 }
+
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+
+forces_object
+{
+    type forces;
+    functionObjectLibs ("libforces.so");
+
+    //writeControl outputTime;
+    writeControl   timeStep;
+    writetInterval  1;
+
+    enabled true;
+ 
+    //// Patches to sample
+    patches ("Fixed_Walls");
+
+    //// Name of fields
+    pName p;
+    Uname U;
+
+    //only for incompressible flows
+    rho rhoInf;
+    rhoInf 1.0;
+
+    //// Centre of rotation
+    CofR (0 0 0);
+}
+
 ///////////////////////////////////////////////////////////////////////////
 
 };
