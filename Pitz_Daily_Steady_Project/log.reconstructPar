@@ -1,0 +1,110 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-17d01581437c
+Exec   : reconstructPar
+Date   : Feb 08 2025
+Time   : 23:11:56
+Host   : "ElMakinon"
+PID    : 25020
+I/O    : uncollated
+Case   : /home/cfd/OpenFOAM/cfd-12/Pitz_Daily_Steady_Project
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reconstructing meshes
+
+    Merging mesh 0 with 1
+    Merging mesh 2 with 3
+    Merging mesh 4 with 5
+    Merging mesh 6 with 7
+    Merging mesh 0 with 2
+    Merging mesh 4 with 6
+    Merging mesh 0 with 4
+
+Time = 100s
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        p
+        nut
+        k
+        epsilon
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+    (no point fields)
+
+Collecting uniform files
+
+Time = 200s
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        p
+        nut
+        k
+        epsilon
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+    (no point fields)
+
+Collecting uniform files
+
+Time = 262s
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        p
+        nut
+        k
+        epsilon
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+    (no point fields)
+
+Collecting uniform files
+
+End
+

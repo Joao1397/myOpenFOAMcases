@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-17d01581437c
+Exec   : renumberMesh -overwrite -parallel
+Date   : Feb 08 2025
+Time   : 23:11:51
+Host   : "ElMakinon"
+PID    : 24970
+I/O    : uncollated
+Case   : /home/cfd/OpenFOAM/cfd-12/Pitz_Daily_Steady_Project
+nProcs : 8
+Slaves : 
+7
+(
+"ElMakinon.24971"
+"ElMakinon.24972"
+"ElMakinon.24973"
+"ElMakinon.24974"
+"ElMakinon.24975"
+"ElMakinon.24976"
+"ElMakinon.24977"
+)
+
+Pstream initialised with:
+    floatTransfer      : false
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Mesh size: 12225
+Before renumbering :
+    band           : 1476
+    profile        : 408423
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading geometric fields
+
+Reading volScalarField v2
+Reading volScalarField nut
+Reading volScalarField p
+Reading volScalarField k
+Reading volScalarField epsilon
+Reading volScalarField omega
+Reading volScalarField f
+Reading volScalarField nuTilda
+Reading volVectorField U
+
+Renumbering processor cell decomposition map cellProcAddressing
+Renumbering processor face decomposition map faceProcAddressing
+Renumbering processor point decomposition map pointProcAddressing
+After renumbering :
+    band           : 51
+    profile        : 357703
+
+Writing mesh to "constant"
+
+End
+
+Finalising parallel run

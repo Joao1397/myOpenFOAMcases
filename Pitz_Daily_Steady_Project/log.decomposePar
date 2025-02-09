@@ -1,0 +1,143 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-17d01581437c
+Exec   : decomposePar
+Date   : Feb 08 2025
+Time   : 23:11:50
+Host   : "ElMakinon"
+PID    : 24967
+I/O    : uncollated
+Case   : /home/cfd/OpenFOAM/cfd-12/Pitz_Daily_Steady_Project
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Calculating distribution of cells
+
+Selecting decomposer scotch
+
+Finished decomposition in 0.022378 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 1532
+    Number of faces shared with processor 1 = 58
+    Number of faces shared with processor 2 = 9
+    Number of faces shared with processor 3 = 23
+    Number of faces shared with processor 6 = 25
+    Number of faces shared with processor 7 = 2
+    Number of processor patches = 5
+    Number of processor faces = 117
+    Number of boundary faces = 3117
+
+Processor 1
+    Number of cells = 1531
+    Number of faces shared with processor 0 = 58
+    Number of faces shared with processor 2 = 26
+    Number of faces shared with processor 7 = 30
+    Number of processor patches = 3
+    Number of processor faces = 114
+    Number of boundary faces = 3116
+
+Processor 2
+    Number of cells = 1531
+    Number of faces shared with processor 0 = 9
+    Number of faces shared with processor 1 = 26
+    Number of faces shared with processor 3 = 52
+    Number of processor patches = 3
+    Number of processor faces = 87
+    Number of boundary faces = 3133
+
+Processor 3
+    Number of cells = 1532
+    Number of faces shared with processor 0 = 23
+    Number of faces shared with processor 2 = 52
+    Number of processor patches = 2
+    Number of processor faces = 75
+    Number of boundary faces = 3175
+
+Processor 4
+    Number of cells = 1525
+    Number of faces shared with processor 5 = 54
+    Number of faces shared with processor 6 = 3
+    Number of faces shared with processor 7 = 27
+    Number of processor patches = 3
+    Number of processor faces = 84
+    Number of boundary faces = 3132
+
+Processor 5
+    Number of cells = 1525
+    Number of faces shared with processor 4 = 54
+    Number of faces shared with processor 6 = 28
+    Number of processor patches = 2
+    Number of processor faces = 82
+    Number of boundary faces = 3132
+
+Processor 6
+    Number of cells = 1524
+    Number of faces shared with processor 0 = 25
+    Number of faces shared with processor 4 = 3
+    Number of faces shared with processor 5 = 28
+    Number of faces shared with processor 7 = 58
+    Number of processor patches = 4
+    Number of processor faces = 114
+    Number of boundary faces = 3102
+
+Processor 7
+    Number of cells = 1525
+    Number of faces shared with processor 0 = 2
+    Number of faces shared with processor 1 = 30
+    Number of faces shared with processor 4 = 27
+    Number of faces shared with processor 6 = 58
+    Number of processor patches = 4
+    Number of processor faces = 117
+    Number of boundary faces = 3103
+
+Number of processor faces = 395
+Max number of cells = 1532 (0.25357873% above average 1528.125)
+Max number of processor patches = 5 (53.846154% above average 3.25)
+Max number of faces between processors = 117 (18.481013% above average 98.75)
+
+Time = 0s
+
+Decomposing FV fields
+
+    Decomposing volScalarFields
+
+        v2
+        nut
+        p
+        k
+        epsilon
+        omega
+        f
+        nuTilda
+
+    Decomposing volVectorFields
+
+        U
+
+Decomposing point fields
+
+    (no point fields)
+
+End
+

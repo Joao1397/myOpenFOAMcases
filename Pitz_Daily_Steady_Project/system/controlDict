@@ -28,15 +28,15 @@ endTime         2000;
 
 deltaT          1;
 
-writeControl    timeStep;
+writeControl    adjustableRunTime;
 
 writeInterval   100;
 
 purgeWrite      0;
 
-writeFormat     ascii;
+writeFormat     binary;
 
-writePrecision  6;
+writePrecision  8;
 
 writeCompression off;
 
@@ -45,5 +45,7 @@ timeFormat      general;
 timePrecision   6;
 
 runTimeModifiable true;
+
+adjustTimeStep yes;
 
 // ************************************************************************* //
