@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#!/bin/bash
+
 foamListTimes -rm
 rm log.*
 rm *.foam
@@ -38,7 +40,8 @@ echo -e "
 Start renumberMesh
 "
 
-mpirun -np 8 renumberMesh -overwrite -parallel > log.renumberMesh 2>&1
+# mpirun -np 8 renumberMesh -overwrite -parallel > log.renumberMesh 2>&1
+mpirun -np 2 renumberMesh -overwrite -parallel > log.renumberMesh 2>&1
 
 #------------------------------------------------------------------------------
 echo -e "
@@ -52,7 +55,8 @@ echo -e "
 Start foamRun
 "
 
-mpirun -np 8 foamRun -solver incompressibleFluid -parallel > log.solver 2>&1
+# mpirun -np 8 foamRun -solver incompressibleFluid -parallel > log.solver 2>&1
+mpirun -np 2 foamRun -solver incompressibleFluid -parallel > log.solver 2>&1
 
 #------------------------------------------------------------------------------
 echo -e "
@@ -75,6 +79,8 @@ End reconstructPar
 "
 
 rm -rf process*
+
+python3 Residuals.py
 
 touch Pitz_Daily_Steady.foam
 

@@ -38,7 +38,7 @@ writeFormat     binary;
 
 writePrecision  8;
 
-writeCompression off;
+writeCompression no;
 
 timeFormat      general;
 
@@ -46,6 +46,6 @@ timePrecision   6;
 
 runTimeModifiable true;
 
-adjustTimeStep yes;
+adjustableRunTime yes;
 
 // ************************************************************************* //
